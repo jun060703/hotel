@@ -1,0 +1,219 @@
+@charset "urf-8";
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR:wght@300;700&family=Unna&display=swap');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif; font-size: 14px;color: #000;line-height: 1.4;
+}
+.en{
+    font-family: 'Unna', serif;
+}
+.en_1{
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+
+/* reset */
+* {margin: 0;padding: 0;}
+a{text-decoration: inherit; color: inherit;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td
+{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+.wrap{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+/* header */
+header{
+    width: 100%;
+    background-color: red;
+    padding: 0 40px;
+    box-sizing: border-box;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s;
+}
+header .menuOpen{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 16px; 
+    line-height: 100px;
+}
+header .menuOpen span{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .menuOpen span.mid{
+    top: 50%;
+}
+header .menuOpen span.bot{
+    top: 100%;
+}
+header .book{
+    float: left;
+    margin-right: 10px;
+    height: 100%;
+    font-size: 25px;
+}
+header .langs{
+    float: left;
+    margin-left: 220px;
+    overflow: hidden;
+    width: 150px;
+    background-color: green;
+}
+header .langs li{
+    float: left;
+    width: 50%;
+}
+header .langs li:nth-child(1){
+    font-weight: bold;
+}
+header .langs li:nth-child(2){
+    color: #ddd;
+}
+header .langs li a{
+    display: block;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+header .right{
+    float: right;
+}
+header .right li{
+    float: left; margin-right:55px;
+}
+header .right li:nth-child(2){
+    margin-right:0;
+}
+header .right li p{
+    letter-spacing: 1px;
+}
+header .right li .logo{
+    width: 150px;
+    height: 100px;
+}
+header .right li .logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+header .right li .logo a img{
+    position: absolute; 
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width:100%;
+}
+
+.visual {
+    color: #fff;
+}
+.visual .slide li{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.visual .slide li img{
+    position: absolute;right: 0;top: 0; width: 100%;
+}
+.visual .slide .mainText{
+    position: absolute;
+    top: 35%;
+    right: 18%;
+    width: 25%;
+}
+.visual .slide .mainText strong{
+    display: block;
+    font-size: 50px;
+    margin-bottom:30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.visual .slide .mainText>p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.8;
+    margin-bottom: 70px;
+}
+.visual .slide .mainText .num{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.visual .slide .mainText .num span{
+    position: absolute;
+    top: -10px;
+    display: inline-block;
+    padding: 10px 4px;
+    opacity: 0;
+}
+.visual .slide .mainText .message{
+    font-size: 26px;
+    line-height: 1.2;
+}
+.visual .menu{
+    position: absolute;
+    left: 4%;
+    bottom: 7%;
+    font-size: 21px;
+    padding-bottom: 7px;
+    overflow: hidden;
+}
+.visual .menu:after{
+    content: ;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation-name:bar 4.5s infinite;
+}
+@keyframes bar{
+    
+}
+.visual .menu li{
+    float: left;
+    padding-right:20px;
+}
+.visual .menu li:nth-child(2){
+    padding-right: 130px;
+}
+.visual .menu li span i{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.visual .menu li:nth-child(2)span i {
+    margin-right: 22px;
+}
+.visual .menu li p{
+    font-size: 28px;
+}
